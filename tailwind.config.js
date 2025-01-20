@@ -19,6 +19,9 @@ export default {
       
             },
     extend: {
+      backgroundImage: {
+        'custom-bg': "url('/src/assets/images/BG IMAGE.png')",
+      },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
