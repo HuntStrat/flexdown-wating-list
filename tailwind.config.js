@@ -7,6 +7,7 @@ export default {
     './src/**/*.{ts,tsx}',
   ],
   theme: {
+    extend: {
     colors: {
       'dark-black': '#161617',
       'light-black': '#242629',
@@ -15,10 +16,27 @@ export default {
       'light-gray' : '#595C61',
       'gray': '#86888B',
       'white' : '#F5F5F8',
+      'blur-white': '#F9F7FF',
+      'gradient-purple': '#9976DC63',
+      'gradient-white': '#FFFFFF',
    
       
             },
-    extend: {
+            blur: {
+              'custom-blur': '10px',
+            },
+            boxShadow: {
+              'list-shadow': '0px 4px 10px rgba(0, 0, 0, 0.1)',
+            },
+            backgroundColor: {
+              'border-gradient':
+                'linear-gradient(90deg, #9976DC63 0%, #FFFFFF 100%)',
+            },
+ 
+      lineHeight: {
+        '100': '100px',
+        '36': '36px',
+      },
       backgroundImage: {
         'custom-bg': "url('/src/assets/images/BG IMAGE.png')",
       },
