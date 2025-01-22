@@ -17,7 +17,7 @@ const Home: React.FC = () => {
           <img className="w-[28%]" src="/src/assets/logo/Logo.svg" alt="Logo" />
 
           {/* Heading */}
-          <h1 className="w-[70%] leading-100 font-poppins font-bold text-6xl md:text-5xl">
+          <h1 className="w-[70%] leading-100 font-poppins font-bold text-6xl ">
             Smarter Deals for Modern Living
           </h1>
 
