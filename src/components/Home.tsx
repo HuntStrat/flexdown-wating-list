@@ -36,8 +36,8 @@ const Home: React.FC = () => {
           />
 
        <img src={Buying} alt="buying" className="absolute left-[2px] top-[200px]" />
-       <img src={Renting} alt="buying" className="absolute right-[5px] top-[80px]" />
-       <img src={Selling} alt="buying" className="absolute right-[5px] top-[380px]" />
+       <img src={Renting} alt="buying" className="absolute right-[-15px] top-[80px]" />
+       <img src={Selling} alt="buying" className="absolute right-[-15px] top-[380px]" />
         </div>
       </div>
 

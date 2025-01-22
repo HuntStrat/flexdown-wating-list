@@ -13,7 +13,7 @@ const WaitingList: React.FC = () => {
         if (email) {
           try {
             const response = await fetch(
-            "https://flexdown.fly.dev/api/v1/man/user/pub",
+            "https://lockedin-flexdown.fly.dev/api/v1/user/waiting-list",
               {
                 method: "POST",
                 headers: {
