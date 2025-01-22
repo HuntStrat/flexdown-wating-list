@@ -14,6 +14,7 @@ export default {
       'black-gray': '#3A3C3F',
       'dark-gray': '#4D5258',
       'light-gray' : '#595C61',
+      'border-gray' : '#AAACAE',
       'gray': '#86888B',
       'white' : '#F5F5F8',
       'blur-white': '#F9F7FF',
@@ -21,6 +22,9 @@ export default {
       'gradient-white': '#FFFFFF',
    
       
+            },
+            borderRadius: {
+              '2px': '2px', 
             },
             blur: {
               'custom-blur': '10px',
@@ -34,7 +38,7 @@ export default {
             },
  
       lineHeight: {
-        '100': '100px',
+        '10': '120px',
         '36': '36px',
       },
       backgroundImage: {
