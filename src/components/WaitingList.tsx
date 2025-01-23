@@ -38,21 +38,21 @@ const WaitingList: React.FC = () => {
         }
       };
     return (
-<div className="w-full h-[38vh] flex flex-col items-center justify-between rounded-[30px] bg-blur-white shadow-list-shadow 
+<div className="w-full h-[25vh] lg:h-[28vh] flex flex-col items-center justify-between rounded-[30px] bg-blur-white shadow-list-shadow 
 border-[1px] border-transparent relative p-4 ">
 
-<h3 className="font-semibold text-xl text-center">Join our waitlist</h3>
+<h3 className="font-semibold text-xl text-center lg:text-3xl lg:p-4">Join our waitlist</h3>
 
-<div className=" w-full h-[24vh] font-poppins flex flex-col justify-between items-center">
+<div className=" w-full h-[15vh] font-poppins flex flex-col justify-between items-center lg:flex-row lg:items-center lg:justify-between lg:h-[15vh]">
     <input
-      className="h-[60px] w-full p-4 border-2 rounded-[200px] text-l border-border-gray " 
+     className="w-full p-4 lg:p-8 h-[60px] lg:h-[80px] rounded-[200px] border-2 text-l lg:text-[20px] border-border-gray"
       type="email"
       placeholder="Enter email"
       value={email}
       onChange={(e) => setEmail(e.target.value)}
     />
     <button
-      className="transform -translate-y-1/2 w-[280px] h-[60px] rounded-[100px] bg-black text-white text-l border border-black drop-shadow-xl"
+      className="w-full h-[60px] lg:w-[180px] lg:h-[80px] mt-4 lg:mt-12 lg:absolute lg:top-1/2 lg:right-2 lg:transform lg:-translate-y-1/2 rounded-[100px] lg:rounded-[200px] bg-black text-white text-l lg:text-xl border border-black drop-shadow-xl"
       onClick={handleSubmit}
     >
       Notify me
