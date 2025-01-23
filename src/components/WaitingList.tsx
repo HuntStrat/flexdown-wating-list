@@ -45,7 +45,7 @@ border-[1px] border-transparent relative p-4 ">
 
 <div className=" w-full h-[15vh] font-poppins flex flex-col justify-between items-center lg:flex-row lg:items-center lg:justify-between lg:h-[15vh]">
     <input
-     className="w-full p-4 lg:p-8 h-[60px] lg:h-[80px] rounded-[200px] border-2 text-l lg:text-[20px] border-border-gray"
+     className="w-full p-4 lg:p-8 h-[60px] lg:h-[80px] rounded-[200px] border-2 text-l lg:text-[20px] border-border-gray bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
       type="email"
       placeholder="Enter email"
       value={email}
