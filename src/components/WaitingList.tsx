@@ -4,7 +4,7 @@ import React, {useState} from "react";
 
 const WaitingList: React.FC = () => {
     const [email, setEmail] = useState("");
-    const [showSuccess, setShowSuccess] = useState(false);
+    const [showSuccess, setShowSuccess] = useState(true);
     const [showError, setShowError] = useState(false); 
 
 
@@ -38,21 +38,21 @@ const WaitingList: React.FC = () => {
         }
       };
     return (
-<div className="w-full h-[25vh] flex flex-col items-center justify-between md:p-4 lg:p-10 rounded-[30px] bg-blur-white shadow-list-shadow 
-border-[1px] border-transparent relative ">
+<div className="w-full h-[38vh] flex flex-col items-center justify-between rounded-[30px] bg-blur-white shadow-list-shadow 
+border-[1px] border-transparent relative p-4 ">
 
-<h3 className="font-semibold text-[36px] text-center">Join our waitlist</h3>
+<h3 className="font-semibold text-xl text-center">Join our waitlist</h3>
 
-<div className="relative w-full font-poppins">
+<div className=" w-full h-[24vh] font-poppins flex flex-col justify-between items-center">
     <input
-      className="h-[80px] w-full p-4 border-2 rounded-[200px] text-[20px] border-border-gray" 
+      className="h-[60px] w-full p-4 border-2 rounded-[200px] text-l border-border-gray " 
       type="email"
       placeholder="Enter email"
       value={email}
       onChange={(e) => setEmail(e.target.value)}
     />
     <button
-      className="absolute top-1/2 right-0 transform -translate-y-1/2 w-[200px] h-[80px] rounded-[200px] bg-black text-white text-xl border border-black drop-shadow-xl"
+      className="transform -translate-y-1/2 w-[280px] h-[60px] rounded-[100px] bg-black text-white text-l border border-black drop-shadow-xl"
       onClick={handleSubmit}
     >
       Notify me
@@ -62,7 +62,7 @@ border-[1px] border-transparent relative ">
              {/* Success Popup */}
              {showSuccess && (
   <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
-    <div className="flex flex-col justify-between items-center h-[50vh] w-[50%] bg-white p-8 rounded-lg shadow-lg text-center font-poppins relative">
+    <div className="flex flex-col justify-between items-center h-[70vh] w-[90%] bg-white p-8 rounded-lg shadow-lg text-center font-poppins relative">
       {/* Close button in top-right corner */}
       <button
         className="absolute top-4 right-4 text-2xl font-bold text-light-black"
@@ -71,9 +71,9 @@ border-[1px] border-transparent relative ">
         X
       </button>
 
-      <img src="/src/assets/images/LogoPopUp.svg" alt="" />
+      <img className="w-[50%]" src="/src/assets/images/LogoPopUp.svg" alt="" />
 
-      <h1 className="text-4xl font-bold text-light-black">
+      <h1 className="text-2xl font-bold text-light-black">
         You are on our list!
       </h1>
 

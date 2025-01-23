@@ -38,7 +38,7 @@ export default {
             },
  
       lineHeight: {
-        '10': '120px',
+        '10': '60px',
         '36': '36px',
       },
       backgroundImage: {
