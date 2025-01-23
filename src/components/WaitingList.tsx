@@ -4,7 +4,7 @@ import React, {useState} from "react";
 
 const WaitingList: React.FC = () => {
     const [email, setEmail] = useState("");
-    const [showSuccess, setShowSuccess] = useState(true);
+    const [showSuccess, setShowSuccess] = useState(false);
     const [showError, setShowError] = useState(false); 
 
 
@@ -52,7 +52,7 @@ border-[1px] border-transparent relative p-4 ">
       onChange={(e) => setEmail(e.target.value)}
     />
     <button
-      className="w-full h-[60px] lg:w-[180px] lg:h-[80px] mt-4 lg:mt-12 lg:absolute lg:top-1/2 lg:right-2 lg:transform lg:-translate-y-1/2 rounded-[100px] lg:rounded-[200px] bg-black text-white text-l lg:text-xl border border-black drop-shadow-xl"
+      className="w-full h-[60px] lg:w-[180px] lg:h-[80px] mt-4 lg:mt-8 lg:absolute lg:top-1/2 lg:right-2 lg:transform lg:-translate-y-1/2 rounded-[100px] lg:rounded-[200px] bg-black text-white text-l lg:text-xl border border-black drop-shadow-xl"
       onClick={handleSubmit}
     >
       Notify me
