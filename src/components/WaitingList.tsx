@@ -62,7 +62,7 @@ border-[1px] border-transparent relative p-4 ">
              {/* Success Popup */}
              {showSuccess && (
   <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
-    <div className="flex flex-col justify-between items-center h-[70vh] w-[90%] bg-white p-8 rounded-lg shadow-lg text-center font-poppins relative">
+    <div className="flex flex-col justify-between items-center h-[70vh] w-[90%] md:w-[50%] md:h-[55vh] bg-white p-8 rounded-lg shadow-lg text-center font-poppins relative">
       {/* Close button in top-right corner */}
       <button
         className="absolute top-4 right-4 text-2xl font-bold text-light-black"
@@ -73,7 +73,7 @@ border-[1px] border-transparent relative p-4 ">
 
       <img className="w-[50%]" src="/src/assets/images/LogoPopUp.svg" alt="" />
 
-      <h1 className="text-2xl font-bold text-light-black">
+      <h1 className="text-2xl md:text-3xl font-bold text-light-black">
         You are on our list!
       </h1>
 

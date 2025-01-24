@@ -56,6 +56,7 @@ export default {
     md: '768px',
     lg: '976px',
     xl: '1440px',
+    desktop1024: { max: '1024px' },
   },
   plugins: [],
 }
