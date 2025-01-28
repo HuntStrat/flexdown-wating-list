@@ -38,7 +38,7 @@ const WaitingList: React.FC = () => {
         }
       };
     return (
-<div className="w-full h-[25vh] lg:h-[28vh] flex flex-col items-center justify-between rounded-[30px] bg-blur-white shadow-list-shadow 
+<div className="w-full h-[25vh] md:h-[24vh] lg:h-[28vh] flex flex-col items-center justify-between rounded-[30px] bg-blur-white shadow-list-shadow 
 border-[1px] border-transparent relative p-4 ">
 
 <h3 className="font-semibold text-xl text-center lg:text-3xl lg:p-4">Join our waitlist</h3>
@@ -62,7 +62,7 @@ border-[1px] border-transparent relative p-4 ">
              {/* Success Popup */}
              {showSuccess && (
   <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
-    <div className="flex flex-col justify-between items-center h-[70vh] w-[90%] md:w-[50%] md:h-[55vh] bg-white p-8 rounded-lg shadow-lg text-center font-poppins relative">
+    <div className="flex flex-col justify-between items-center h-[60vh] w-[90%] md:w-[68%] md:h-[40vh] xl:w-[50%] bg-white p-8 rounded-lg shadow-lg text-center font-poppins relative">
       {/* Close button in top-right corner */}
       <button
         className="absolute top-4 right-4 text-2xl font-bold text-light-black"
