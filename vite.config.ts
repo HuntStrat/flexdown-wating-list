@@ -16,15 +16,15 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { fileURLToPath } from 'url'
+import { dirname } from 'path'
 
-// Create the __dirname equivalent for ES modules
-const __dirname = fileURLToPath(new URL('.', import.meta.url))
+const _dirname = dirname(fileURLToPath(import.meta.url))
 
 export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": fileURLToPath(new URL('./src', import.meta.url))
+      "@": `${_dirname}/src`
     },
   },
 })
