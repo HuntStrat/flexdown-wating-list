@@ -43,7 +43,7 @@ border-[1px] border-transparent relative p-4 ">
 
 <h3 className="font-semibold text-xl text-center lg:text-3xl lg:p-4">Join our waitlist</h3>
 
-<div className=" w-full h-[15vh] font-poppins flex flex-col justify-between items-center lg:flex-row lg:items-center lg:justify-between lg:h-[15vh]">
+<div className=" w-full h-[15vh] font-poppins flex flex-col justify-between items-center lg:flex-row lg:items-center lg:justify-between lg:relative lg:h-[15vh]">
     <input
      className="w-full p-4 lg:p-8 h-[60px] lg:h-[80px] rounded-[200px] border-2 text-l lg:text-[20px] border-border-gray bg-white text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
       type="email"
@@ -52,7 +52,7 @@ border-[1px] border-transparent relative p-4 ">
       onChange={(e) => setEmail(e.target.value)}
     />
     <button
-      className="w-full h-[60px] lg:w-[180px] lg:h-[80px] mt-4 lg:mt-8 lg:absolute lg:top-1/2 lg:right-2 lg:transform lg:-translate-y-1/2 rounded-[100px] lg:rounded-[200px] bg-black text-white text-l lg:text-xl border border-black drop-shadow-xl"
+      className="w-full h-[60px] lg:w-[180px] lg:h-[80px] lg:absolute lg:top-1/2 lg:right-0 lg:-translate-y-1/2 rounded-[100px] lg:rounded-[200px] bg-black text-white text-l lg:text-xl border border-black drop-shadow-xl"
       onClick={handleSubmit}
     >
       Notify me

@@ -4,8 +4,8 @@ const OurOffer: React.FC = () => {
   return (
     <div className="flex flex-col justify-between h-[25vh] md:px-4">
       {/* Offer Text */}
-      <div className="w-full font-poppins space-y-4 px-4 md:flex flex-row justify-between">
-        <h1 className="text-black text-2xl font-bold md:w-1/2 md:text-3xl ">Our Offer:</h1>
+      <div className="w-full font-poppins space-y-4 px-4 md:flex flex-row justify-between lg:align-center">
+        <h1 className="text-black text-2xl font-bold md:w-1/2 md:text-3xl lg:mt-8">Our Offer:</h1>
         <p className="text-start text-l text-light-gray-400 leading-relaxed pb-4 md:w-[45%]">
           At FlexDown, precision is our promise in every property we handle. We
           believe that attention to detail makes all the difference, whether

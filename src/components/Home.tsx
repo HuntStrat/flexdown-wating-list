@@ -55,7 +55,7 @@ const Home: React.FC = () => {
             className={`
               w-full leading-10 font-poppins font-bold 
               text-[40px] md:text-[50px] md:leading-20 
-              lg:text-[60px] lg:leading-20 lg:w-[70%] 
+              lg:text-[50px] lg:leading-15 lg:w-[70%] 
               desktop1024:leading-10
               transition-opacity duration-500 ease-in-out
               ${isAnimating ? 'opacity-0' : 'opacity-100'}
