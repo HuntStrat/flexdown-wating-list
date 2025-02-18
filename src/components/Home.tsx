@@ -54,7 +54,7 @@ const Home: React.FC = () => {
           <h1 
             className={`
               w-full leading-10 font-poppins font-bold 
-              text-[40px] md:text-[50px] md:leading-20 
+              text-[40px] md:text-[40px] md:leading-20 
               lg:text-[50px] lg:leading-15 lg:w-[70%] 
               desktop1024:leading-10
               transition-opacity duration-500 ease-in-out
