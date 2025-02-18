@@ -16,7 +16,7 @@ const OurOffer: React.FC = () => {
       {/* Footer Section */}
       <div className="w-full flex justify-center items-center mb-4 md:mt-0">
         <span className="text-center text-gray-500 text-sm">
-          © 2025 FlexDown - 
+          © 2025 FlexDown - All rights reserved
         </span>
       </div>
     </div>

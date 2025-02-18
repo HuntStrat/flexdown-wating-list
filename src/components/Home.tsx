@@ -1,6 +1,11 @@
 import React, { useState, useEffect } from "react";
 import OurOffer from "./OurOffer";
 import WaitingList from "./WaitingList";
+import ImageBigScreen from '../assets/images/waiting-list-bigscreen.png'
+import ImageLaptopScreen from '../assets/images/waiting-list-tablet.png'
+import ImageSmallScreen from '../assets/images/waiting-list.png'
+
+import Logo from '../assets/logo/Logo.svg'
 
 const Home: React.FC = () => {
   // Array of text options
@@ -48,7 +53,7 @@ const Home: React.FC = () => {
         {/* Left Section */}
         <div className="w-full h-[55vh] md:h-[52vh] lg:h-[70vh] md:pl-8 flex flex-col items-start justify-between text-black p-4">
           {/* Logo */}
-          <img className="w-[25%]" src="/src/assets/logo/Logo.svg" alt="Logo" />
+          <img className="w-[25%]" src={Logo} alt="Logo" />
           
           {/* Heading with transition effect */}
           <h1 
@@ -75,18 +80,18 @@ const Home: React.FC = () => {
         <div className="w-full flex items-center justify-center mt-4 md:mt-2 md:px-2">
           {/* Image for xl screens */}
           <img
-            src="/src/assets/images/waiting-list-bigscreen.png"
+            src={ImageBigScreen}
             alt="Waiting List - Big Screen"
             className="hidden xl:block max-w-full w-[95%] md:h-[68vh]"
           />
           {/* Image for md and small screens */}
           <img
-            src="/src/assets/images/waiting-list.png"
+            src={ImageSmallScreen}
             alt="Waiting List - Small Screen"
             className="block xl:hidden md:hidden max-w-full w-[95%] md:h-[68vh]"
           />
           <img
-            src="/src/assets/images/waiting-list-tablet.png"
+            src={ImageLaptopScreen}
             alt="Waiting List - Small Screen"
             className="hidden md:block xl:hidden max-w-full w-[95%] md:h-[68vh]"
           />
