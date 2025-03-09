@@ -4,8 +4,8 @@ import { TypeAnimation } from "react-type-animation";
 
 const WaitList = () => {
   return (
-    <div className="w-full h-full px-[0.5rem] md:px-[2rem] pt-[1rem] flex flex-col md:justify-center justify-start items-center md:gap-[2.625rem] flex-1  border border-[#F0F0F0] bg-[#F3F3F3]">
-      <div className="w-full h-auto flex-col items-start md:gap-[3.875rem]  self-stretch">
+    <div className="w-full h-full px-[0.5rem] lg:px-[2rem] pt-[1rem] flex flex-col lg:justify-center justify-start items-center md:gap-[2.625rem] flex-1  border border-[#F0F0F0] bg-[#F3F3F3]">
+      <div className="w-full h-auto flex-col items-start lg:gap-[3.875rem]  self-stretch">
         {/* upperside */}
         <div className="flex  mb-[1rem] flex-col items-start gap-[1.5rem] self-stretch ">
           <div className="w-full h-auto flex flex-row justify-start items-start ">
@@ -56,7 +56,7 @@ const WaitList = () => {
         </div>
 
         {/* lowerside */}
-        <div className="flex w-full h-full md:h-auto flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/background.jpeg')] bg-cover bg-center ">
+        <div className="flex w-full h-full lg::h-auto flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/background.jpeg')] bg-cover bg-center ">
           <div className="flex w-full flex-row justify-start items-center md:gap-[0.75rem] self-stretch">
             <div className="flex py-[0.875rem] px-[1.5rem] flex-col justify-center rounded-[12.89431rem] bg-white/50 items-center h-[2.74669rem]">
               <p className="text-center leading-normal text-[1.125rem] text-[#222425]">
@@ -75,9 +75,11 @@ const WaitList = () => {
             </div>
           </div>
 
-          <div className="w-full lg:flex  h-auto hidden flex-row justify-end items-start gap-[1.375rem]">
+          <div className="w-full md:flex  h-full hidden flex-row justify-end md:items-center lg:items-start gap-[1.375rem]">
             <Card
-              icon={<HandCoinsIcon className="w-[1.5rem] h-[1.5rem] mb-4" />}
+              icon={
+                <HandCoinsIcon className="lg:w-[1.5rem] lg:h-[1.5rem] mb-4" />
+              }
               heading="Discounts & 
 Rewards"
               divider={<img src="/images/line.svg" />}
@@ -86,7 +88,7 @@ Rewards"
               }
             />
             <Card
-              icon={<UserIcon className="w-[2rem] h-[3rem]" />}
+              icon={<UserIcon className="lg:w-[2rem] lg:h-[3rem]" />}
               heading="Free Sub-Accounts for All Sides"
               divider={<img src="/images/line.svg" />}
               subHeading={
@@ -94,7 +96,7 @@ Rewards"
               }
             />
             <Card
-              icon={<BookText className="w-[2rem] h-[3rem]" />}
+              icon={<BookText className="lg:w-[2rem] lg:h-[3rem]" />}
               heading="Secure Document Management"
               divider={<img src="/images/line.svg" />}
               subHeading={
@@ -110,7 +112,7 @@ Rewards"
 
 const Card = ({ icon, heading, subHeading, divider }) => {
   return (
-    <div className="flex flex-col p-[0.75rem] items-start rounded-[0.5rem] bg-white/85 gap-[0.75rem] h-[13.62rem]  w-[16.1875rem]">
+    <div className="flex flex-col p-[0.75rem] items-start rounded-[0.5rem] bg-white/85 lg:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem]  w-[16.1875rem]">
       {icon}
       <h3 className="text-[#312F33] font-semibold leading-normal text-[1.25rem]">
         {heading}
