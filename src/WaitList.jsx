@@ -5,7 +5,7 @@ import { TypeAnimation } from "react-type-animation";
 const WaitList = () => {
   return (
     <div className="w-full h-full px-[0.5rem] lg:px-[1rem]  flex flex-col  justify-start items-center md:gap-[2.625rem] flex-1  border border-[#F0F0F0] bg-[#F3F3F3]">
-      <div className="w-full h-full flex-col items-start  pt-[0.5rem] lg:gap-[3.875rem]  self-stretch">
+      <div className="w-full h-auto flex-col items-start  pt-[0.5rem] lg:gap-[3.875rem]  self-stretch">
         {/* upperside */}
         <div className="flex  mb-[1rem] flex-col items-start gap-[1rem] self-stretch ">
           <div className="w-full h-auto flex flex-row justify-start items-start ">
@@ -56,7 +56,7 @@ const WaitList = () => {
         </div>
 
         {/* lowerside */}
-        <div className="flex w-full h-full lg:h-full flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/background.jpeg')] bg-cover bg-center ">
+        <div className="flex w-full h-full lg:h-auto flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/background.jpeg')] bg-cover bg-center ">
           <div className="flex w-full flex-row justify-start items-center md:gap-[0.75rem] self-stretch">
             <div className="flex py-[0.875rem] px-[1.5rem] flex-col justify-center rounded-[12.89431rem] bg-white/50 items-center h-[2.74669rem]">
               <p className="text-center leading-normal text-[1.125rem] text-[#222425]">
