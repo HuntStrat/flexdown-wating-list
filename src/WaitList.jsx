@@ -4,26 +4,26 @@ import { TypeAnimation } from "react-type-animation";
 
 const WaitList = () => {
   return (
-    <div className="w-full h-full px-[0.5rem] lg:px-[2rem] pt-[1rem] flex flex-col lg:justify-center justify-start items-center md:gap-[2.625rem] flex-1  border border-[#F0F0F0] bg-[#F3F3F3]">
-      <div className="w-full h-auto flex-col items-start lg:gap-[3.875rem]  self-stretch">
+    <div className="w-full h-full px-[0.5rem] lg:px-[1rem]  flex flex-col  justify-start items-center md:gap-[2.625rem] flex-1  border border-[#F0F0F0] bg-[#F3F3F3]">
+      <div className="w-full h-full flex-col items-start  pt-[0.5rem] lg:gap-[3.875rem]  self-stretch">
         {/* upperside */}
-        <div className="flex  mb-[1rem] flex-col items-start gap-[1.5rem] self-stretch ">
+        <div className="flex  mb-[1rem] flex-col items-start gap-[1rem] self-stretch ">
           <div className="w-full h-auto flex flex-row justify-start items-start ">
             <img src="/images/logo.svg" alt="logo" />
           </div>
 
           <div className="flex flex-col justify-center items-center gap-[1rem] self-stretch">
             <div className="flex w-full flex-col justify-center items-center gap-[2.5rem] self-stretch">
-              <h1 className="text-[#161617] md:h-[8rem] h-[6rem] w-full md:w-[40.82469rem] text-center text-[2rem] md:text-[3rem] font-semibold leading-[150%] ">
+              <h1 className="text-[#161617] md:h-[7rem] h-[6rem] w-full md:w-[40.82469rem] text-center text-[2rem] md:text-[3rem] font-semibold leading-[150%] ">
                 <TypeAnimation
                   sequence={[
-                    "Smarter Deals for  Modern Living",
+                    "Smarter Deals for  Modern Living ✔️",
                     3000, // Waits 1s
                     "Start Your Journey with Confidence 🚀",
-                    4000, // Waits 2s
-                    "List smarter, not harder", //
                     5000, // Waits 2s
                     "Smart Property Deals,Zero Hidden Fees 🏡",
+                    5000, // Waits 2s
+                    "Close Deals Faster, Grow Stronger 🤝",
                     () => {
                       console.log("Sequence completed");
                     },
@@ -56,7 +56,7 @@ const WaitList = () => {
         </div>
 
         {/* lowerside */}
-        <div className="flex w-full h-full lg::h-auto flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/background.jpeg')] bg-cover bg-center ">
+        <div className="flex w-full h-full lg:h-full flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/background.jpeg')] bg-cover bg-center ">
           <div className="flex w-full flex-row justify-start items-center md:gap-[0.75rem] self-stretch">
             <div className="flex py-[0.875rem] px-[1.5rem] flex-col justify-center rounded-[12.89431rem] bg-white/50 items-center h-[2.74669rem]">
               <p className="text-center leading-normal text-[1.125rem] text-[#222425]">
@@ -112,7 +112,7 @@ Rewards"
 
 const Card = ({ icon, heading, subHeading, divider }) => {
   return (
-    <div className="flex flex-col p-[0.75rem] items-start rounded-[0.5rem] bg-white/85 lg:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem]  w-[16.1875rem]">
+    <div className="flex flex-col p-[0.75rem] items-start rounded-[0.5rem] bg-white/20 lg:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem]  w-[16.1875rem]  shadow-[inset_0_1px_0.5px_rgba(255,255,255,0.2)] backdrop-blur-lg ">
       {icon}
       <h3 className="text-[#312F33] font-semibold leading-normal text-[1.25rem]">
         {heading}
