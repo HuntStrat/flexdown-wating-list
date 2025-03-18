@@ -1,0 +1,12 @@
+frontend:
+    path: .
+    publish: dist
+    scripts:
+        build:
+            - npm run build
+        deploy:
+            - npm install
+    subdomain: flexdown-wating-list
+name: flexdown-wating-list
+region: us-east-1
+yamlVersion: 2
