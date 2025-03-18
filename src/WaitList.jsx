@@ -56,7 +56,7 @@ const WaitList = () => {
         </div>
 
         {/* lowerside */}
-        <div className="flex w-full h-full lg:h-auto flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/bg.jpg')] bg-cover bg-center ">
+        <div className="flex w-full h-full lg:h-full flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/bg.jpg')] bg-cover bg-center ">
           <div className="flex w-full flex-row justify-start items-center md:gap-[0.75rem] self-stretch">
             <div className="flex py-[0.875rem] px-[1.5rem] flex-col justify-center rounded-[12.89431rem] bg-white/50 items-center h-[2.74669rem]">
               <p className="text-center leading-normal text-[1.125rem] text-[#222425]">
