@@ -75,7 +75,7 @@ const WaitList = () => {
             </div>
           </div>
 
-          <div className="w-full flex  md:h-full h-auto  flex-col gap-[2rem]  md:flex-row md:justify-end justify-start  md:items-center lg:items-start md:gap-[1.375rem]">
+          <div className="w-full flex  md:h-full h-auto  flex-col gap-[2rem]  md:flex-row md:justify-end items-center justify-start  md:items-center lg:items-start md:gap-[1.375rem]">
             <Card
               icon={
                 <HandCoinsIcon className="lg:w-[1.5rem] lg:h-[1.5rem] mb-4" />
@@ -112,9 +112,9 @@ Rewards`}
 
 const Card = ({ icon, heading, subHeading, divider }) => {
   return (
-    <div className="flex w-full flex-col p-[0.75rem] items-center justify-center md:justify-start md:items-start rounded-[0.5rem] bg-white/20 gap-[0.4rem] p  md:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem] h-[13rem]   md:w-[16.1875rem]  shadow-[inset_0_1px_0.5px_rgba(255,255,255,0.2)] backdrop-blur-lg ">
+    <div className="flex w-[95%] flex-col p-[0.75rem] items-center justify-center md:justify-start md:items-start rounded-[0.5rem] bg-white/20 gap-[0.4rem] p  md:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem] h-[13rem]   md:w-[16.1875rem]  shadow-[inset_0_1px_0.5px_rgba(255,255,255,0.2)] backdrop-blur-lg ">
       {icon}
-      <h3 className="text-[#312F33] text-center md:text-start font-semibold leading-normal md:text-wrap text-nowrap text-[1.40rem] md:text-[1.25rem]">
+      <h3 className="text-[#312F33] text-center md:text-start font-semibold leading-normal  text-[1.40rem] md:text-[1.25rem]">
         {heading}
       </h3>
       {divider}
