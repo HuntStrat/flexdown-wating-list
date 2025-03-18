@@ -56,7 +56,7 @@ const WaitList = () => {
         </div>
 
         {/* lowerside */}
-        <div className="flex w-full h-full lg:h-full flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/bg.jpg')] bg-cover bg-center ">
+        <div className="flex w-full h-auto md:h-full flex-col py-[2rem] md:px-[1.125rem] justify-start gap-[2rem] items-end self-stretch rounded-[1rem] bg-[url('/images/bg.jpg')] bg-cover bg-center ">
           <div className="flex w-full flex-row justify-start items-center md:gap-[0.75rem] self-stretch">
             <div className="flex py-[0.875rem] px-[1.5rem] flex-col justify-center rounded-[12.89431rem] bg-white/50 items-center h-[2.74669rem]">
               <p className="text-center leading-normal text-[1.125rem] text-[#222425]">
@@ -75,14 +75,14 @@ const WaitList = () => {
             </div>
           </div>
 
-          <div className="w-full md:flex  h-full hidden flex-row justify-end md:items-center lg:items-start gap-[1.375rem]">
+          <div className="w-full flex  md:h-full h-auto  flex-col gap-[2rem]  md:flex-row md:justify-end justify-start  md:items-center lg:items-start md:gap-[1.375rem]">
             <Card
               icon={
                 <HandCoinsIcon className="lg:w-[1.5rem] lg:h-[1.5rem] mb-4" />
               }
-              heading="Discounts & 
-Rewards"
-              divider={<img src="/images/line.svg" />}
+              heading={`Discounts &  
+Rewards`}
+              divider={<img src="/images/line.svg" className="w-full" />}
               subHeading={
                 "Turn every transaction Into savings –exclusive rewards await."
               }
@@ -90,7 +90,7 @@ Rewards"
             <Card
               icon={<UserIcon className="lg:w-[2rem] lg:h-[3rem]" />}
               heading="Free Sub-Accounts for All Sides"
-              divider={<img src="/images/line.svg" />}
+              divider={<img src="/images/line.svg" className="w-full  " />}
               subHeading={
                 "Efficient access to transaction details and financial management."
               }
@@ -98,7 +98,7 @@ Rewards"
             <Card
               icon={<BookText className="lg:w-[2rem] lg:h-[3rem]" />}
               heading="Secure Document Management"
-              divider={<img src="/images/line.svg" />}
+              divider={<img src="/images/line.svg" className="w-full" />}
               subHeading={
                 "Store, access, and share documents with confidence, no paperwork hassles."
               }
@@ -112,13 +112,13 @@ Rewards"
 
 const Card = ({ icon, heading, subHeading, divider }) => {
   return (
-    <div className="flex flex-col p-[0.75rem] items-start rounded-[0.5rem] bg-white/20 lg:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem]  w-[16.1875rem]  shadow-[inset_0_1px_0.5px_rgba(255,255,255,0.2)] backdrop-blur-lg ">
+    <div className="flex w-full flex-col p-[0.75rem] items-center justify-center md:justify-start md:items-start rounded-[0.5rem] bg-white/20 gap-[0.4rem] p  md:gap-[0.75rem] lg:h-[13.62rem] md:h-[15rem] h-[13rem]   md:w-[16.1875rem]  shadow-[inset_0_1px_0.5px_rgba(255,255,255,0.2)] backdrop-blur-lg ">
       {icon}
-      <h3 className="text-[#312F33] font-semibold leading-normal text-[1.25rem]">
+      <h3 className="text-[#312F33] text-center md:text-start font-semibold leading-normal md:text-wrap text-nowrap text-[1.40rem] md:text-[1.25rem]">
         {heading}
       </h3>
       {divider}
-      <p className="text-[#5E6063] text-[1rem] font-normal leading-normal">
+      <p className="text-[#5E6063] text-center md:text-start text-[1rem]   font-normal leading-normal">
         {subHeading}
       </p>
     </div>
